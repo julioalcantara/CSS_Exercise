@@ -11,6 +11,10 @@ body {
     width: 100%;
     background-color: #2ddf5c;
     padding: 8px 16px;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1;
 }
 
 .main-header > div {
@@ -30,6 +34,7 @@ body {
     text-align: right;
     width: calc(100% - 74px);
     vertical-align: middle;
+    
 }
 
 .main-nav__items {
