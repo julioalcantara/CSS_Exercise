@@ -70,8 +70,9 @@ main {
     border-left: 4px solid #0e4f1f;
 }
 
-#package-plan__free:hover{
-    border-color: #ff5454;
+#package-plan__free:hover,
+#package-plan__free:active {
+    border-left-color: #ff5454;
 }
 
 .clear_fix {
@@ -88,4 +89,25 @@ main {
 
 #package-plan__premium .package-plan__subtitle {
     color: #bbb;
+}
+
+@media (min-width: 40rem){
+    main {
+      max-width: 1500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
+
+@media (min-width: 1500px){
+    .package-plan {
+      border-left: 4px solid #0e4f1f;
+    }
+    #package-plan__free {
+        border-right: 4px solid #0e4f1f;
+    }
+    #package-plan__free:hover,
+    #package-plan__free:active {
+        border-right-color: #ff5454;
+    }
 }
