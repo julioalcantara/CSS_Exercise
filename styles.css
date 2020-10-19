@@ -30,31 +30,26 @@
         background-position: 50% 25%;
     }
     #product-overview h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 }
 
 .section-title {
     color: #2ddf5c;
     text-align: center;
-    margin-top: 5rem;
-    font-size: 2rem;
 }
 
 .plan {
     background: #d5ffdc;
     text-align: center;
     padding: 1rem;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     width: 100%;
-    border-radius: 8px;
 }
 
 .plan--highlighted {
     background: #19b84c;
     color: white;
-    padding: 0.5rem;
-    /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); */
 }
 
 .plan__annotation {
@@ -91,45 +86,62 @@
     margin: 0.5rem 0;
 }
 
-@media (min-width: 41rem) {
+@media (min-width: 40rem) {
     .plan-list{
-    width: 100%;
-    text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .plan {
-        display: inline-block;
         width: 30%;
-        vertical-align: middle;
         min-width: 13rem;
         max-width: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 28rem;
     }
+    /* .plan__title {
+        margin: 0.5rem 0 0 0;
+    }
+    .plan__price {
+        margin: 1rem;
+    }
+    .plan h3 {
+        margin: 0.5rem;
+    } */
 
     .plan--highlighted {
         box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+        height: 30rem;
+        z-index: 1;
     }
 }
 
 #key-features {
     background-color: #ff1b68;
-    margin-top: 2rem;
+    margin-top: 5rem;
+    padding: 1rem;
 }
 
 #key-features .section-title {
     color: white;
-    font-size: 1.5rem;
-    padding-top: 1.2rem;
+    margin: 2rem;
 }
 
 .key-feature__list {
     list-style: none;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
-.key-feature {
+/* .key-feature {
     width: 100%;
     padding-bottom: 2rem;
-}
+} */
 
 .key-feature__image {
     background: #ffcede;
@@ -138,24 +150,24 @@
     border: 2px solid #424242;
     border-radius: 50%;
     margin: auto;
-    padding: 20px;
+    padding: 1.5rem;
 }
 
 .key-feature__description {
     text-align: center;
-    color: white;
     font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
 }
 
-@media (min-width: 41rem) {
+@media (min-width: 40rem) {
     .key-feature {
-        display: inline-block;
         width: 30%;
-        vertical-align: top;
         max-width: 25rem;
     }
-    #key-features .section-title {
-        font-size: 2rem;
+    .key-feature__list {
+        display: flex;
+        justify-content: center;
     }
 }
 
